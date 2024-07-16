@@ -53,9 +53,9 @@
           <label for="image">Upload Image</label>
           <input type="file" id="image" v-model="image" accept="image/*" required>
         </div> -->
-      <button type="submit" class="create-button">
+      <a href="/myrecipe"><button type="submit" class="create-button">
         <a href="/myrecipe">Create</a>
-      </button>
+      </button></a>
     </form>
   </div>
 </template>

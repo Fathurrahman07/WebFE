@@ -1,11 +1,11 @@
 <template>
-      <main>
+  <div class="my-background">
         <div class="recipe-cards">
             <div class="recipe-cardd">
               <a href="/vegetarian"></a>
-            <p><a href="/vegetarian">Vegetarian</a></p>
+            <p>Vegetarian</p>
             <div class="recipe-card2">
-              <img :src="require('@/assets/Vegetarian-removebg.png')" alt="vegetarian">
+              <a href="/vegetarian"><img :src="require('@/assets/Vegetarian.png')" alt="vegetarian"></a>
             <p>Kategori ini menawarkan berbagai macam sayuran segar, mulai dari bayam dan brokoli hingga wortel dan kacang hijau. Cocok untuk yang menginginkan makanan yang sehat dan kaya akan serat serta nutrisi penting.</p>
           </div>
         </div>
@@ -24,8 +24,7 @@
           </div>
           </div>
         </div>
-      </main>
-    
+    </div>
   </template>
   
   <script>
@@ -39,6 +38,11 @@
     text-align: center;
     font-family: Arial, sans-serif;
   }
+
+  .my-background {
+  background-color: #debeab;
+  height: 110vh;
+}
   
   header {
     display: flex;
@@ -53,10 +57,10 @@
     text-align: center;
   }
   
-  main {
+  /* main {
     background-color: #fff;
     padding: 20px;
-  }
+  } */
   
   h2 {
     font-size: 20px;
@@ -67,7 +71,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 150px;
-    
+    background-color: #debeab;
   }
 
 
@@ -77,10 +81,10 @@
   }
   
   .recipe-cardd {
-    width: 200px;
+    width: 25%;
+    height: 550px;
     text-align: center;
     border: 2px solid #000000;
-    padding: 10px;
     border-radius: 10px;
     background-color: #CC9595;
     cursor: pointer;

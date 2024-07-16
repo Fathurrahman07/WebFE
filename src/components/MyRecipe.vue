@@ -76,9 +76,9 @@
     </div>
   </div>
   <div class="create-button">
-    <button  type="submit" >
-      <a href="/createrecipe">CREATE RECIPE</a>
-  </button>
+    <a href="/createrecipe"><button  type="submit" >
+      CREATE RECIPE
+  </button></a>
   </div>
 </template>
 

@@ -45,7 +45,8 @@ export default {
 }
 
 .my-background {
-  
+  background-color: #debeab;
+  height: 110vh;
 }
 
 .navbar {
@@ -56,7 +57,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1337px;
+  /* width: 1337px; */
 }
 
 .navbar-brand {

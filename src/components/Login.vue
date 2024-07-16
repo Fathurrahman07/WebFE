@@ -1,7 +1,7 @@
 <template>
   <div class="login-page">
     <div class="login-container">
-      <h1>Welcome Back</h1>
+      <h2>Welcome Back</h2>
 
       <form @submit.prevent="login">
         <div class="form-group">
@@ -10,8 +10,7 @@
             type="email"
             id="email"
             v-model="email"
-            placeholder="Enter Your Email"
-            required
+            placeholder=""
           />
         </div>
 
@@ -21,8 +20,7 @@
             type="password"
             id="password"
             v-model="password"
-            placeholder="**********"
-            required
+            placeholder=""
           />
         </div>
 
@@ -36,7 +34,7 @@
 
         <div class="form-group">
           <button type="submit">
-            <a href="/profile">Login</a>
+            <a href="/">Login</a>
           </button>
         </div>
       </form>
@@ -55,8 +53,7 @@
 
 <script>
 export default {
-  name: "LoginForm", // Change the component name
-  // Other component options
+  name: "LoginForm",
 };
 </script>
 
@@ -68,7 +65,6 @@ export default {
   align-items: center;
   height: 100vh;
   background-color: #f4f4f4;
- 
 }
 
 /* .login-container {
@@ -78,12 +74,13 @@ export default {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 } */
 
-h1 {
+h2 {
   text-align: center;
   margin-top: -50px;
-  margin-left: 40px
+  margin-left: 40px;
+  font-size: 40px;
+  font-family: 'Inter', sans-serif; /* Tambahkan baris ini */
 }
-
 
 .form-group {
   margin-bottom: 15px;
@@ -132,16 +129,16 @@ button[type="submit"] {
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 13%;
 }
 button[type="submit-register"] {
   background-color: #fff;
-  padding: 10px 90px;
+  padding: 5px 90px;
   border-color: #000000;
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 13%;
 
   a {
     text-decoration: none;
@@ -159,11 +156,13 @@ button[type="submit-register"] {
 .register a {
   color: #7c7878;
   text-decoration: none;
+  font-size: 14px;
 }
 
 #forgotpass {
   font-size: 14px;
-  text-align: left;
+  text-align: right;
+  margin-left: 15%;
 }
 
 #rememberMe {

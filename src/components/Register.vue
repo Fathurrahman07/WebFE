@@ -9,8 +9,8 @@
             type="username"
             id="username"
             v-model="username"
-            placeholder="Your Username"
-            required
+            placeholder=""
+            
           />      
         </div>
 
@@ -20,8 +20,8 @@
             type="email"
             id="email"
             v-model="email"
-            placeholder="Your Email Adress"
-            required
+            placeholder=""
+            
           />
         </div>
 
@@ -31,8 +31,8 @@
             type="password"
             id="password"
             v-model="password"
-            placeholder="**********"
-            required
+            placeholder=""
+            
           />
         </div>
 
@@ -45,9 +45,9 @@
         </div>
 
         <div class="form-group">
-          <button type="submit">
-            <a id="crt" href="/login">Create Account</a>
-          </button>
+          <a href="/login"><button type="submit">
+            Create Account
+          </button></a>
         </div>
       </form>
 
@@ -74,6 +74,7 @@ export default {
   align-items: center;
   height: 100vh;
   background-color: #f4f4f4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* .login-container {
@@ -101,14 +102,15 @@ label {
 }
 
   input[type="username"] {
-    text-align: left;
-    justify-content: left;
     width: 100%;
     padding: 10px;
     border: 2px solid #000000;
     border-radius: 10px;
     margin-bottom: 20px;
     word-spacing: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    justify-content: left;
   }
 
 
@@ -182,11 +184,12 @@ a#log {
 }
 
 #forgotpass {
-  font-size: 14px;
-  text-align: left;
+  font-size: 10px;
+  text-align: right;
+  margin-left: 15%;
 }
 
 #rememberMe {
-  font-size: 14px;
+  font-size: 10px;
 }
 </style>
